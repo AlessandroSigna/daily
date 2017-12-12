@@ -1,0 +1,793 @@
+@font-face {
+    font-family: 'Agency FB';
+    src: url('font/agency_fb.ttf') format('truetype');
+}
+
+body { /*Corpo del sito*/
+	background-image: url("images/siteContent/bg5.png");
+	/*background-repeat: no-repeat;*/
+	background-position: right top;
+	background-attachment: fixed;
+	margin: 0;
+	color:black;
+}
+
+header { /*Parte iniziale del sito*/
+	height: 40px;
+	width: 100%;
+	background-image: url("images/siteContent/header.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-bottom: 3px groove #E5E4E4 ;
+
+	/*border: 3px solid #ea0385;*/
+}
+
+img#mappa {
+	margin:30px;
+	margin-left: 150px;
+	max-width:1850px;
+}
+
+footer { /*Parte finale del sito*/
+	position: static;
+	bottom: 0;
+	height: 200px;
+	width: 100%;
+	background-image: url("images/siteContent/header.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: scroll;
+	border-top: 3px ridge #E5E4E4 ;
+}
+
+ul#Navigazione { /*In riferimento alla lista Navigazione*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: static;
+	top: 0;
+	width: 100%;
+}
+
+ul#Navigazione li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB";
+	font-size: 20px;
+}
+
+ul#Navigazione li#LogoId { /*in riferimento all'elemento logo della lista di Navigazione*/
+	float: left;
+	border-bottom: none;
+}
+
+ul#Navigazione li a#Lista { /*in riferimento ai link della lista di Navigazione*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+ul#Navigazione li a#ListaC { /*in riferimento ai link della lista di Navigazione*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+
+ul#Navigazione li a#Logo { /*in riferimento al link Logo*/
+	display: block;
+	color: black;
+	/*text-align: center;
+	text-decoration: none;*/
+}
+
+ul#Navigazione li a:hover { /*oscuramento di tutti i link della lista di Navigazione */
+	/*background-color: #CBF4FF;*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+ul#Navigazione #rightContent { /*in riferimento al testo a destra della lista di Navigazione*/
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+ul#Navigazione li a#Logout { /*in riferimento al link Logo*/
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+form#Search {
+	display: block;
+	margin: auto;
+	width: 25%;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+form#Search input[type=text] {
+	width: 100px;
+	background-image: url("images/siteContent/searchSprite.png");
+	background-color: rgba(255,255,255,0.8);
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 50px;
+	border: 1px dotted #352847;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	transition: width 0.4s ease-in-out;
+	font-size:18px;
+}
+
+form#Search input[type=text]:focus {
+	width: 100%;
+}
+
+h1
+{	
+	display:block;
+	float:left;
+	text-align: left;
+	font-family: "Agency FB";
+	text-decoration:none;
+	font-size:23px;
+	color: #2E5069;
+
+}
+
+ul#NavigazioneFooter { /*In riferimento alla lista Navigazione*/
+	list-style-type: none;
+	position: static;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+ul#NavigazioneFooter li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB"; /*Agency FB*/
+	font-size: 20px;
+	padding: 40px;
+	/*border-right: 1px solid #352847;*/
+	/*border-bottom: 1px solid #352847;*/
+}
+
+ul#NavigazioneFooter li a#ListaFooter { /*in riferimento ai link della lista di Navigazione*/
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	border-left: 2px solid white;
+}
+
+ul#NavigazioneFooter li a#ListaFooter:hover{ /*oscuramento di tutti i link della lista di Navigazione */
+	/*background-color: #CBF4FF;*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+ul#NavigazioneFooter #Content { /*in riferimento al testo a destra della lista di Navigazione*/
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+ul#NavigazioneFooter #Content p#Contatti { /*in riferimento al testo a destra della lista di Navigazione*/
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+div#resultPage
+{
+	overflow: auto;
+	display: block;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 80%;
+	height: 100%;
+	padding:25px 20px 30px 20px;
+	border: 2px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family:arial;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+}
+
+div#resultPage a#logoFine{
+	margin: auto;
+	width: 23%;
+	display:block;
+	
+	margin-top: 400px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+a#Risposta {
+	color: #055BB2;
+	display:block;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 16px;
+	font-style: italic;
+	font-family: arial;
+	margin-right: 18px;
+	margin-top: 0px;
+	border-bottom: 1px dotted #49CFF7;
+	box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+
+}
+
+div#dettagli {
+	float: left;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 80%;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 2px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	font-family:arial;
+	background-color: rgba(255,255,255,0.7);
+	color: #055BB2;
+}
+
+div.gallery
+{
+	margin: 5px;
+	margin-bottom: 40px;
+	border: 1px solid #055BB2;
+	float:left;
+	width: 23%;
+}
+
+div.gallery:hover
+{
+	border: 1px solid #49CFF7;
+}
+
+div.gallery img
+{
+	width: 100%;
+	height: auto;
+}
+
+div.gallery img#userImg:hover
+{
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+div.desc
+{
+	color: #055BB2;
+	display:block;
+	min-height: 108px;
+	background-color: rgba(255,255,255,0.9);
+	font-size: 16px;
+	font-style: italic;
+	font-family: arial;
+	padding: 15px;
+	text-align: center;
+	border: 1px dotted #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+}
+
+div.desc a#titolo
+{
+	text-decoration:none;
+	font-size:16px;
+	font-style:bold;
+	color: #1B84DF;
+
+}
+
+div.desc a#titolo:hover
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+div.desc a#sconto
+{
+	text-decoration:none;
+	font-size:19px;
+	font-style:bold;
+	color: red;
+
+}
+
+div.desc a#taglio
+{
+	text-decoration: line-through;
+	color: #30A2F9;
+	font-size:16px;
+	font-style:bold;
+
+}
+
+div.galleryRicerca img
+{
+	width: 20%;
+	height: auto;
+	float: right;
+}
+
+div#container
+{
+	text-align:center;
+	width: 100%;
+	margin-bottom: 380px;
+}
+
+div.productList
+{
+	display: inline-block;
+	margin-top:40px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid gray;
+	float:left;
+	width: 23%;
+	min-height: 270px;
+	max-height: 270px;
+}
+
+div.productList img
+{
+	width: 75%;
+	height: auto;
+}
+
+div.descList
+{
+	float:left;
+	color: #055BB2;
+	display:inline-block;
+	margin-top:40px;
+	margin-bottom: 10px;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 16px;
+	font-style: italic;
+	font-family: arial;
+	text-align: center;
+	border-bottom: 1px solid gray;
+	width: 70%;
+	height:auto;
+	min-height: 270px;
+	max-height: 270px;
+
+}
+
+div.descList img
+{
+	float:right;
+	width: 22%;
+	height: auto;
+}
+
+div.descList a#titolo
+{
+	text-decoration:none;
+	font-size:22px;
+	font-style:bold;
+	color: #1B84DF;
+
+}
+
+div.descList a#titolo:hover
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+
+
+
+
+
+div#containerDetail
+{
+	text-align:left;
+	width: 100%;
+	margin-bottom: 380px;
+}
+
+div.productDetail
+{
+	display: inline-block;
+	margin-top:40px;
+	margin-bottom: 10px;
+	float:left;
+	width: 35%;
+}
+
+div.productDetail img
+{
+	width: 100%;
+	height: auto;
+}
+
+div.descDetail
+{
+	float:right;
+	color: black;
+	display:inline-block;
+	margin-top:40px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 80px;
+	font-size: 12px;
+	font-family: arial;
+	text-align: left;
+	width: 60%;
+	height:auto;
+	background-color: rgba(255,255,255,0.9);
+}
+
+div.descDetail img
+{
+	float:right;
+	width: 25%;
+	height: auto;
+	margin-right: 50px;
+}
+
+div.descDetail a#titolo
+{
+	text-decoration:none;
+	font-size:30px;
+	font-style:bold;
+	color: #1B84DF;
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+div.descDetail a#dettagliTitolo
+{
+	text-decoration:none;
+	font-size:25px;
+	font-style:bold;
+	color: black;
+	display: block;
+	margin-bottom: 5px;
+
+}
+
+div.descDetail a#dettagliProdotto
+{
+	text-decoration:none;
+	text-align: left;
+	color: gray;
+	display: inline-block;
+	font-size:12px;
+	font-style:bold;
+	margin-right: 3px;
+
+}
+
+div.descDetail a#Prezzo
+{
+	display:inline-block;
+	margin: 3px;
+	color: #30A2F9;
+	font-size: 20px;
+
+}
+
+div.descDetail a#taglio
+{
+	display:inline-block;
+	text-decoration: line-through;
+	color: #30A2F9;
+	font-size: 20px;
+
+}
+
+div.descDetail a#sconto
+{
+	display:inline-block;
+	color: red;
+	font-size: 25px;
+
+}
+
+div.descDetail a#disponibilitaGreen
+{
+	display:block;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: green;
+	font-size: 20px;
+
+}
+
+div.descDetail a#disponibilitaRed
+{
+	display:block;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: #863A3A;
+	font-size: 20px;
+
+}
+
+div.descDetail a#disponibilitaBlack
+{
+	display:block;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: black;
+	font-size: 20px;
+
+}
+
+div.descDetail a#alert
+{
+	display:block;
+	margin-top: 20px;
+	color: #863A3A;
+	font-size: 12px;
+
+}
+
+div.descDetail form#buy input[type=submit] {
+	width: 200px;
+	background-image: url("images/siteContent/header.png");
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-style: bold;
+	font-family:"Agency FB";
+	font-size: 18px;
+	color: white;
+}
+
+
+div.descDetail  form#buy input[type=submit]:hover:enabled {
+	opacity: 0.8;
+	transition-duration: 0.4s;
+	color:white;
+}
+
+div.descDetail  form#buy input[type=submit]:active:enabled {
+	transform: translateY(2px);
+}
+
+div.descDetail form#buy input[type=submit]:disabled, button:disabled {
+	width: 400px;
+	background-image: url("images/siteContent/header.png");
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-style: bold;
+	font-family:"Agency FB";
+	font-size: 18px;
+	color: white;
+	opacity: 0.4;
+}
+
+
+div.descList form#discard input[type=submit] {
+	width: 200px;
+	background-image: url("images/siteContent/header.png");
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-style: bold;
+	font-family:"Agency FB";
+	font-size: 18px;
+	color: white;
+}
+
+div.descList form#discard input[type=submit]:hover {
+	opacity: 0.8;
+	transition-duration: 0.4s;
+	color:white;
+}
+
+div.descList form#discard input[type=submit]:active{
+	transform: translateY(2px);
+}
+
+div.descList form#proceed input[type=submit] {
+	width: 200px;
+	background-image: url("images/siteContent/header.png");
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-style: bold;
+	font-family:"Agency FB";
+	font-size: 18px;
+	color: white;
+}
+
+div.descList form#proceed input[type=submit]:enabled:hover {
+	opacity: 0.8;
+	transition-duration: 0.4s;
+	color:white;
+}
+
+div.descList form#proceed input[type=submit]:enabled:active{
+	transform: translateY(2px);
+}
+
+div.descList form#proceed input[type=submit]:disabled, button:disabled {
+	width: 400px;
+	background-image: url("images/siteContent/header.png");
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-style: bold;
+	font-family:"Agency FB";
+	font-size: 18px;
+	color: white;
+	opacity: 0.4;
+}
+
+
+div#resultPageProduct
+{
+	overflow: auto;
+	display: block;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 80%;
+	height: 100%;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 2px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	font-family:arial;
+	background-color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+}
+
+div#resultPageProduct a#logoFine{
+	margin: auto;
+	width: 23%;
+	display:block;
+	margin-top: 80px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+
+
+/* Media Query, sito responsive*/
+
+
+@media only screen and (max-width: 768px) {
+	form#Search {
+	padding-top: 100px;
+		}
+	
+
+	ul#NavigazioneFooter #Content { /*in riferimento al testo a destra della lista di Navigazione*/
+			max-width: 350px;
+		}
+
+
+
+	div.gallery
+{
+	margin: auto;
+	margin-bottom: 40px;
+	border: 1px solid #055BB2;
+	float:unset;
+	width: 80%;
+}
+
+div#resultPage
+{
+	width: 98%;
+	margin-bottom: 150px;
+}
+
+div#resultPage a#logoFine{
+	width: auto;
+	margin-top: 400px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	margin-left:30px;
+	display: block;
+}
+
+ul#Navigazione li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB";
+	font-size: 15px;
+}
+
+ul#Navigazione li a#Logo {
+	margin-top: 18px;
+}
+
+ul#Navigazione #rightContent {
+	padding: 0px;
+	padding-top:10px;
+	font-size: 0px;
+}
+
+ul#Navigazione li a#ListaC { /*in riferimento ai link della lista di Navigazione*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 28px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+header { /*Parte iniziale del sito*/
+	position:fixed;
+	height: 80px;
+}
+
+footer { /*Parte finale del sito*/
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-image: url("images/siteContent/header.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: scroll;
+	border-top: 3px ridge #E5E4E4 ;
+}
+
+ul#NavigazioneFooter li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB"; /*Agency FB*/
+	font-size: 13px;
+	padding: 20px;
+	/*border-right: 1px solid #352847;*/
+	/*border-bottom: 1px solid #352847;*/
+}
+
+img#mappa {
+	margin: 100px;
+	margin-left: 100px;
+	margin-bottom: 300px;
+	max-width:500px;
+}
+
+div.descList form#proceed input[type=submit] {
+	width: 95%;
+}
+
+div.descList form#proceed input[type=submit]:disabled, button:disabled {
+	width: 95%;
+}
+
+}

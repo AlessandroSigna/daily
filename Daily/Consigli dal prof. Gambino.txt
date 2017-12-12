@@ -1,0 +1,22 @@
+Serve un magazzino per i prodotti.
+ERRORE TIPICO: si modifica il magazzino e vengono modificate le vendite.
+NON COLLEGARE VENDITA E MAGAZZINO. VENDITA VA CON I PRODOTTI PRESENTI E MAGAZZINO A PARTE.
+
+Il resto abbastanza liberi, seguire le linee guida della scheda per il corso Ing. Informatica.
+
+Aggiungere/eliminare prodotti da MAGAZZINO, controllare le cose se ci sono in magazzino.
+Politiche d'acquisto: se viene messo nel carrello vale già come prelevato da magazzino o ancora rimane il suo prezzo?
+Carrello con magazzino per cambiare prezzo.
+
+Eventuali politiche per abbassamento di prezzo ( sconti ) .
+
+AGGIUNGERE INDIRIZZO SPEDIZIONE OLTRE QUELLO DI FATTURAZIONE.
+
+Fattura con numero fattura oltre data, STORICO ACQUISTI di più elementi, non fattura di uno per volte SBAGLIATISSIMO.
+Chiave primaria SIA FATTURA CHE DATA, ovviamente.
+
+METODO GET PER I FORM: VA NELLA CRONOLOGIA E PUOI SALVARLO NEI PREFERITI
+METOTO POST: NO
+
+METTI DATA ARRIVO PRODOTTO PER I NUOVI CAPI DA INSERIRE NELLA HOME INSIEME AI SCELTI PER TE (COOKIES)
+CAMBIA LA SELECT DELLA RICERCA E FAI CHE SELEZIONI LA TAGLIA NEL MENU DETTAGLIO E CONTROLLA SE C'E' IN MAGAZZINO

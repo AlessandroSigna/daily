@@ -1,0 +1,8 @@
+[30-Oct-2017 16:03:44 Europe/Berlin] PHP Warning:  require_once(PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in C:\Users\Lorenzo\Documents\Daily\prova.php on line 12
+[30-Oct-2017 16:03:44 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/PHPMailerAutoload.php' (include_path='C:\xampp\php\PEAR') in C:\Users\Lorenzo\Documents\Daily\prova.php on line 12
+[30-Oct-2017 16:08:31 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\includes\PHPmailers\PHPMailer-master\src\PHPMailerAutoLoad.php): failed to open stream: No such file or directory in C:\Users\Lorenzo\Documents\Daily\prova.php on line 12
+[30-Oct-2017 16:08:31 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\php\includes\PHPmailers\PHPMailer-master\src\PHPMailerAutoLoad.php' (include_path='C:\xampp\php\PEAR') in C:\Users\Lorenzo\Documents\Daily\prova.php on line 12
+[30-Oct-2017 16:08:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in C:\Users\Lorenzo\Documents\Daily\prova.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Lorenzo\Documents\Daily\prova.php on line 14

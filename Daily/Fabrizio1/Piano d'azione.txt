@@ -1,0 +1,22 @@
+1- Redirect di Authentication e gestione cliente.
+	1.1 Redirect su Signin se mancano dati/non si trovano sulla tabella sql/sono sbagliati V
+		1.1.1 Se si torna su Signin fai apparire "Password Dimenticata?" V
+	1.2 Redirect su Homepage con User e Cart e Storico V
+		1.2.1 Pagina User con impostazioni V per: Inserire fatturazione, inserire metodo di pagamento, effettuare logout V (e gestire lista desideri) ( IN METODO PAG INSERISCI FATTURAZIONE, CARTA E ACC PAYPAL )
+		1.2.2 Vista dei prodotti in carrello, procedi all'acquisto per un gruppo V
+		1.2.3 Storico utente con tutti i dati di SQL
+
+2- Convalidation
+	2.1 Redirect su Signup se mancano dati/....V
+		2.1.1. Fare delle variabili che se attive mandano messaggino rosso tipo "Campo obbligatorio"V
+	2.2 Redirect su NUOVA PAGINA di completamento registrazione e complimenti che va su Home Page. V
+
+3- Pagina di dettaglio sul prodotto
+	3.1 GraficaV
+	3.2 Metti nel carrello ( vedi come fare con SQL )V
+	3.3 Procedi all'acquisto come su, chiedi info pagamento, acquista e genera fattura
+		3.3.3 Ritorna all'homepage DOPO aver eliminato il prodotto dal carrello, inserito l'acquisto nello storico 
+4- Gestisci tempistiche Sessione
+
+DATI IN PIU'
+METTI NEL RISULTATO DELLA RICERCA LA COLLEZIONE ASSOCIATA ALL'OGGETTO PIUTTOSTO CHE A DESTRA

@@ -1,0 +1,308 @@
+body { /*Corpo del sito*/
+	background-image: white;
+	background-repeat: no-repeat;
+	background-position: right-top;
+	background-attachment: scroll;
+	margin: 0;
+	color:black;
+}
+
+footer { /*Parte finale del sito*/
+	position: static;
+	bottom: 0;
+	height: 200px;
+	width: 100%;
+	background-image: url("images/siteContent/header.png");
+	background-repeat: no-repeat;
+		background-position: right-bottom;
+			background-attachment: local;
+	border-top: 3px ridge #E5E4E4 ;
+}
+
+ul#Navigazione { /*In riferimento alla lista Navigazione*/
+	list-style-type: none;
+	margin: auto;
+	width: 15%;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+ul#Navigazione li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB";
+	font-size: 20px;
+	/*border-right: 1px solid #352847;*/
+	/*border-bottom: 1px solid #352847;*/
+}
+
+ul#Navigazione li#LogoId { /*in riferimento all'elemento logo della lista di Navigazione*/
+	float: left;
+	border-bottom: none;
+}
+
+ul#Navigazione li a#Logo { /*in riferimento al link Logo*/
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+ul#Navigazione li a:hover { /*oscuramento di tutti i link della lista di Navigazione */
+	/*background-color: #CBF4FF;*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+form#signup {
+	display: block;
+	margin: auto;
+	width: 450px;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 3px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	font-family:arial;
+}
+form#signup input[type=text] {
+	width: 400px;
+	background: none;
+	height: 30px;
+	border: 1px dotted #352847;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+form#signup input[type=text]:focus {
+	border: 3px inset #49CFF7;
+	opacity: 0.5;
+	transition-duration: 0.4s;
+}
+
+form#signup a#CreateAccount {
+	font-style: bold;
+	font-size: 25px;
+	color: #055BB2;
+}
+
+form#signup a#divider {
+	text-align: center;
+	font-size: 8px;
+	color: gray;
+}
+
+form#signup input[type=submit] {
+	width: 400px;
+	background-color: white;
+	height: 50px;
+	border: 1px solid #49CFF7;
+	box-sizing: border-box;
+	border-radius: 12px;
+	font-style: bold;
+	font-size: 25px;
+	color: #49CFF7;
+}
+
+form#signup a#toSignup {
+	width: 400px;
+	background-color: white;
+	height: 50px;
+	border: 1px solid #49CFF7;
+	box-sizing: border-box;
+	border-radius: 12px;
+	font-style: bold;
+	font-size: 25px;
+	text-decoration: none;
+	color: #49CFF7;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 144px;
+	padding-right: 144px;
+}
+
+form#signup a#toSignup:hover {
+	background-color: #49CFF7;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+	transition-duration: 0.4s;
+	color:white;
+}
+
+form#signup a#toSignup:active {
+	background-color: #07FFAC;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+	transform: translateY(4px);
+}
+
+
+select{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+form#signup input[type=submit]:hover {
+	background-color: #49CFF7;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+	transition-duration: 0.4s;
+	color:white;
+}
+
+form#signup input[type=submit]:active {
+	background-color: #07FFAC;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+	transform: translateY(4px);
+}
+
+form#signup input[type=password] { 
+	width: 400px;
+	background: none;
+	height: 30px;
+	border: 1px dotted #352847;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+form#signup p#error {
+	font-size: 10px;
+	color:red;
+}
+
+form#signup a#Logo p#lostpwd {
+	font-size: 10px;
+	color: #352847;
+	text-align: center;
+}
+
+div#resultPage
+{
+	overflow: auto;
+	display: block;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 80%;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 2px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	font-family:arial;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+}
+
+div#resultPage a#logoFine{
+	margin: auto;
+	width: 23%;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	display: block;
+}
+
+a#Logo { /*in riferimento al link Logo*/
+	color: black;
+	text-decoration: none;
+}
+
+a#Logo:hover { /*oscuramento di tutti i link della lista di Navigazione */
+	/*background-color: #CBF4FF;*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.3s;
+}
+
+ul#NavigazioneFooter { /*In riferimento alla lista Navigazione*/
+	list-style-type: none;
+	position: static;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+ul#NavigazioneFooter li { /*in riferimento agli elementi della lista di Navigazione*/
+	float: left;
+	font-family: "Agency FB"; /*Agency FB*/
+	font-size: 20px;
+	padding: 40px;
+	/*border-right: 1px solid #352847;*/
+	/*border-bottom: 1px solid #352847;*/
+}
+
+ul#NavigazioneFooter li a#ListaFooter { /*in riferimento ai link della lista di Navigazione*/
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+	border-left: 2px solid white;
+}
+
+ul#NavigazioneFooter li a#ListaFooter:hover{ /*oscuramento di tutti i link della lista di Navigazione */
+	/*background-color: #CBF4FF;*/
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	transition-duration: 0.4s;
+}
+
+ul#NavigazioneFooter #Content { /*in riferimento al testo a destra della lista di Navigazione*/
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+ul#NavigazioneFooter #Content p#Contatti { /*in riferimento al testo a destra della lista di Navigazione*/
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+div#containerP {
+	display: block;
+	margin: auto;
+	width: 480px;
+	overflow: auto;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 3px inset #49CFF7;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 25px;
+	font-family:arial;
+}
+
+div#containerP a#CreateAccount {
+	font-style: bold;
+	font-size: 25px;
+	color: #055BB2;
+}
+
+div#containerP a#pMethod {
+	width: 100px;
+	background-color: white;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	font-style: bold;
+	font-size: 25px;
+	text-decoration: none;
+	color: #49CFF7;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+div#containerP a#pMethod:hover {
+	opacity: 0.5;
+	transition-duration: 0.4s;
+	color:white;
+}
+
+div#containerP a#pMethod img {
+	width: 30%;
+	height: auto;
+}

@@ -1,0 +1,5 @@
+In USER: Aggiungi metodo di Pagamento
+	Si apre una finestra stile signup con daily in alto LINK A HOME e nel DIV 3 pulsanti al centro senza bordi con immagine ( che facciamo dopo )
+		-Inserisci indirizzo di fatt -Inserisci carta di credito -Accedi con account Paypal 
+le 3 pagine che si apriranno saranno in formato signup con bordo
+	1 Conferma con passowrd 	2 i dati dal db			3 BOH

@@ -1,0 +1,7 @@
+Stile Form a tendina
+Controllo ad inizio pagina sulla presenza dell'attributo amminastrazione corretto: in caso contrario redirect all'index
+							Redirect:	
+	Inserire Sconti	 	Nominare Amministratori		Inserire nuovi prodotti		Riempire Magazzino	Bannare
+	Codice Maglietta-%	Inserimento e-mail		Megaform Gigante e caricamento  Codice taglia qty	Inserimento
+	Controllo su %<100					immagine			controllo codice	Email.
+	Controllo € Maglietta
